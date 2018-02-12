@@ -1,0 +1,6 @@
+<h1>Doctors at Seatle Grace Hospital</h1>
+
+<% @doctors.each do |doctor| %>
+ <%= link_to doctor.name, doctor_path(doctor) %>  <%= doctor.patient_count %>
+ <br><br>
+<% end %>
